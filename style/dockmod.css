@@ -1,0 +1,20 @@
+body.has_dock {margin:30px;}
+
+/** We only need one line of CSS to support the dock on the right of the screen */
+.has_dock_right_vertical #dock {right:0px;left:auto;border-right-width:0;border-left:1px solid #000;}
+
+/** This is the CSS to display the block on the top of the screen */
+.has_dock_top_horizontal #dock {width:100%;height:30px;background-image:url([[pix:theme|hgradient]]);background-repeat: repeat-x;border-right-width:0;border-bottom:1px solid #000;}
+.has_dock_top_horizontal #dock .dockeditem_container {margin-top:0;}
+.has_dock_top_horizontal #dock .dockeditem {display:inline-block;}
+.has_dock_top_horizontal #dock .dockeditem .dockedtitle {background-image:url([[pix:theme|hgradient]]);background-repeat: repeat-x;background-position:0 10%;border-style:solid;border-width: 0 1px 0 0;border-color:#AAA;}
+.has_dock_top_horizontal #dock .dockeditem .dockedtitle h2 {margin:0 12px;line-height:30px;}
+.has_dock_top_horizontal #dock .dockeditem.firstdockitem {margin-left:10px;}
+.has_dock_top_horizontal #dock .dockeditem.firstdockitem .dockedtitle {border-left-width:1px;}
+.has_dock_top_horizontal #dock .controls {bottom:auto;right:10px;top:0;width:auto;line-height:30px;}
+.has_dock_top_horizontal #dock #dockeditempanel {position:absolute;}
+
+/** CSS to position the new move dock button we created */
+.has_dock_left_vertical #dock .movedockbutton,
+.has_dock_right_vertical #dock .movedockbutton {margin:3px 10px;}
+.has_dock_top_horizontal #dock .movedockbutton {margin:0 3px;}

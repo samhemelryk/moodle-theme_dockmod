@@ -1,0 +1,26 @@
+The Dock Mod theme
+
+This theme is a proof of concept theme that I created while working on the dock
+within Moodle 2.0.
+
+It simply modifies the dock from within the theme allowing it to be moved to from
+the left hand side of the screen to the top, then to the right, and finally back
+to the left.
+It does this in the least invasive way possible by simply extending the dock's
+JavaScript by using event listeners and by adding a marginal amount of CSS.
+There are also instructions within the JS file as to how to fix the dock to once
+position (top, or right) which can be done very easily. The advantage of this is
+that you can position the dock where you wish and usually do it with only 3 lines
+of JavaScript and a dozen lines of CSS.
+
+You should also note that this theme will not work with IE 6 or IE7 as it 
+presently uses display:inline-block to align the items on the dock when it is 
+horizontal. However it would not be a big task to get it working using floats.
+I simply havn't done it because I havn't had time.
+
+Anyway if you have any questions feel free to ask them in the Moodle theme's
+forum as there are lots of people there who will be able to help you.
+http://moodle.org/mod/forum/view.php?id=46
+
+Cheers
+Sam Hemelryk
